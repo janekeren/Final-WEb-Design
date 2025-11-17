@@ -1,0 +1,38 @@
+.navbar {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+    background: rgba(15, 15, 15, 0.0); /* Awal transparan */
+    padding: 25px 0; transition: 0.4s ease;
+}
+.navbar.scrolled { background: rgba(10, 10, 10, 0.95); padding: 15px 0; backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+
+.nav-container {
+    max-width: 1200px; margin: 0 auto; padding: 0 20px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.logo { display: flex; align-items: center; gap: 10px; font-size: 1.8rem; font-weight: 900; color: white; text-transform: uppercase; letter-spacing: 1px; }
+.logo i { color: var(--primary); }
+
+.nav-menu { display: flex; gap: 40px; }
+.nav-menu a { font-weight: 500; font-size: 1rem; transition: 0.3s; position: relative; color: #ddd; }
+.nav-menu a:hover, .nav-menu a.active { color: white; }
+.nav-menu a::after {
+    content: ''; position: absolute; width: 0; height: 2px; background: var(--primary);
+    bottom: -5px; left: 0; transition: 0.3s;
+}
+.nav-menu a:hover::after, .nav-menu a.active::after { width: 100%; }
+
+.hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
+.hamburger span { width: 30px; height: 3px; background: white; transition: 0.3s; border-radius: 2px; }
+
+/* Sidebar Floating - Kiri */
+.sidebar {
+    position: fixed; left: 30px; top: 50%; transform: translateY(-50%); z-index: 999;
+    background: rgba(20, 20, 20, 0.4); backdrop-filter: blur(8px); padding: 20px 10px;
+    border-radius: 50px; display: flex; flex-direction: column; gap: 20px; border: 1px solid rgba(255,255,255,0.1);
+}
+.sidebar a {
+    color: #888; font-size: 1.3rem; transition: 0.3s; display: flex; justify-content: center; align-items: center;
+    width: 45px; height: 45px; border-radius: 50%; position: relative;
+}
+.sidebar a:hover { background: var(--primary); color: white; transform: scale(1.1); box-shadow: 0 0 15px rgba(255, 69, 0, 0.5); }
+.sidebar .divider { height: 1px; background: rgba(255,255,255,0.2); width: 60%; margin: 5px auto; }

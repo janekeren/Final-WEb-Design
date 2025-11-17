@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+    .hero h1 { font-size: 3.5rem; }
+    .hero-content { padding-left: 50px; }
+    .nav-menu { gap: 20px; }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger { display: flex; }
+    .nav-buttons { display: none; }
+    
+    .nav-menu {
+        position: absolute; top: 100%; left: 0; width: 100%; background: #111;
+        flex-direction: column; padding: 30px; gap: 25px; text-align: center;
+        transform: translateY(-150%); transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0); opacity: 0; z-index: -1;
+        border-bottom: 1px solid #333;
+    }
+    .nav-menu.active { transform: translateY(0); opacity: 1; }
+    
+    .hero-content { padding-left: 20px; padding-right: 20px; text-align: center; padding-top: 80px; }
+    .hero h1 { font-size: 2.8rem; }
+    .hero-stats { justify-content: center; gap: 30px; }
+    .hero-btns { justify-content: center; }
+    
+    .sidebar { display: none; } /* Sidebar hilang di HP */
+    
+    .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+    .footer-about .logo { justify-content: center; }
+    
+    .payment-options { grid-template-columns: 1fr; }
+}
