@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak - FitZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        @media(max-width:768px){ .contact-grid{grid-template-columns:1fr} }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-dumbbell"></i><span>FitZone</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kelas.html">Kelas</a></li>
+                <li><a href="pelatih.html">Pelatih</a></li>
+                <li><a href="harga.html">Harga</a></li>
+                <li><a href="kontak.html" class="active">Kontak</a></li>
+                <li><a href="creator.html">Founder Profile</a> </li>
+            </ul>
+            <div class="nav-buttons"><button class="join-btn">Gabung Sekarang</button></div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <aside class="sidebar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="#" class="trigger-schedule"><i class="fas fa-calendar-alt"></i></a>
+        <a href="#" class="trigger-payment"><i class="fas fa-tag"></i></a>
+        <div class="divider"></div>
+        <a href="https://wa.me/6281234567890"><i class="fab fa-whatsapp"></i></a>
+    </aside>
+
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1596357395217-80de13130e92?w=1600');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Hubungi Kami</h1>
+            <p>Punya pertanyaan? Kami siap membantu.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="auth-form" style="background:transparent; border:none;">
+                    <h2 style="text-align:left;">Kirim Pesan</h2>
+                    <form>
+                        <input type="text" placeholder="Nama Lengkap">
+                        <input type="email" placeholder="Email">
+                        <textarea rows="5" placeholder="Pesan Anda" style="width:100%; padding:15px; background:#0a0a0a; border:1px solid #333; color:white; border-radius:10px;"></textarea>
+                        <button class="btn-primary" style="width:100%; margin-top:20px;">Kirim</button>
+                    </form>
+                </div>
+                <div>
+                    <h2 style="color:white; margin-bottom:30px;">Informasi</h2>
+                    <p style="margin-bottom:20px; color:#ccc;"><i class="fas fa-map-marker-alt" style="color:var(--primary); margin-right:10px;"></i> Jl. Arnold Mononutu</p>
+                    <p style="margin-bottom:20px; color:#ccc;"><i class="fas fa-phone" style="color:var(--primary); margin-right:10px;"></i> +62 812 3456 7890</p>
+                    <div style="width:100%; height:300px; background:#222; border-radius:15px; overflow:hidden;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1093.6561885912295!2d124.98515401351806!3d1.421554112461297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32870edd5ce2e055%3A0x7ba35a3e973b12c6!2sMas%20Topan%20Noodle%20and%20Meatball!5e0!3m2!1sen!2sid!4v1763393265765!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="100%" height="100%" style="border:0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="loginModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><div class="auth-form"><h2>Login</h2><form id="loginForm"><label>Email</label><input type="email"><label>Password</label><input type="password"><button class="btn-primary" style="width:100%">Masuk</button></form></div></div></div>
+    <div id="paymentModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><div class="auth-form"><h2>Pembayaran</h2><h3 id="paymentTotal" style="text-align:center;color:white">Total: --</h3><form id="paymentForm"><div class="payment-options"><div class="payment-option"><i class="fas fa-wallet"></i>E-Wallet</div><div class="payment-option"><i class="fas fa-university"></i>Bank</div></div><input type="text" placeholder="No. HP" required><button class="btn-primary" style="width:100%">Bayar</button></form></div></div></div>
+    <div id="scheduleModal" class="modal"><div class="modal-content large"><span class="close-modal">&times;</span><h2 style="color:var(--primary);text-align:center">Jadwal Kelas</h2><div class="schedule-wrapper"><table class="schedule-table"><thead><tr><th>Jam</th><th>Senin</th><th>Jumat</th></tr></thead><tbody><tr><td>08:00</td><td>Yoga</td><td>Pilates</td></tr></tbody></table></div></div></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - FitZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-img {
+            position: relative;
+        }
+        .about-img img {
+            border-radius: 20px;
+            box-shadow: -20px -20px 0 var(--primary);
+        }
+        @media(max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+            .about-img img { box-shadow: none; margin-bottom: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-dumbbell"></i><span>FitZone</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html" class="active">Tentang</a></li>
+                <li><a href="kelas.html">Kelas</a></li>
+                <li><a href="pelatih.html">Pelatih</a></li>
+                <li><a href="harga.html">Harga</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="creator.html">Founder Profile</a> </li>
+            </ul>
+            <div class="nav-buttons"><button class="join-btn">Gabung Sekarang</button></div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Tentang Kami</h1>
+            <p>Lebih dari sekadar tempat latihan, kami adalah komunitas</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800" alt="Gym Interior">
+                </div>
+                <div class="about-text">
+                    <h4 style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Cerita Kami</h4>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px; line-height: 1.2;">Membangun Generasi <br>Yang Lebih Kuat</h2>
+                    <p style="color: #ccc; margin-bottom: 20px;">Didirikan pada tahun 2015, FitZone bermula dari sebuah garasi kecil dengan visi besar: membuat kebugaran dapat diakses dan menyenangkan bagi semua orang.</p>
+                    <p style="color: #ccc; margin-bottom: 30px;">Kini, kami telah berkembang menjadi pusat kebugaran modern dengan ribuan anggota aktif yang saling mendukung. Kami percaya bahwa olahraga bukan hukuman untuk apa yang Anda makan, tapi perayaan atas apa yang tubuh Anda bisa lakukan.</p>
+                    
+                    <div style="display: flex; gap: 20px;">
+                        <div>
+                            <h3 style="font-size: 2rem; color: var(--primary);">10+</h3>
+                            <p style="font-size: 0.9rem;">Tahun Pengalaman</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 2rem; color: var(--primary);">3</h3>
+                            <p style="font-size: 0.9rem;">Cabang Manado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background: #0a0a0a;">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-eye"></i></div>
+                    <h3>Visi Kami</h3>
+                    <p>Menjadi pusat kebugaran nomor satu yang menginspirasi gaya hidup sehat berkelanjutan.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-bullseye"></i></div>
+                    <h3>Misi Kami</h3>
+                    <p>Menyediakan fasilitas terbaik dan edukasi yang tepat untuk membantu member mencapai target.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

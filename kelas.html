@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kelas - FitZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-dumbbell"></i><span>FitZone</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kelas.html" class="active">Kelas</a></li>
+                <li><a href="pelatih.html">Pelatih</a></li>
+                <li><a href="harga.html">Harga</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                 <li><a href="creator.html">Founder Profile</a> </li>
+            </ul>
+            <div class="nav-buttons"><button class="join-btn">Gabung Sekarang</button></div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <aside class="sidebar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="#" class="trigger-schedule"><i class="fas fa-calendar-alt"></i></a>
+        <a href="#" class="trigger-payment"><i class="fas fa-tag"></i></a>
+        <div class="divider"></div>
+        <a href="https://wa.me/6281234567890"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    </aside>
+
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1600');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Pilihan Kelas</h1>
+            <p>Temukan ritme latihan yang Anda sukai</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-img"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600" alt="Yoga"></div>
+                    <div class="trainer-info">
+                        <h3>Power Yoga</h3>
+                        <p>Latihan keseimbangan jiwa dan raga.</p>
+                        <button class="btn-outline">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-img"><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600" alt="Boxing"></div>
+                    <div class="trainer-info">
+                        <h3>Boxing</h3>
+                        <p>Cardio intensitas tinggi pembakar lemak.</p>
+                        <button class="btn-outline">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-img"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600" alt="Crossfit"></div>
+                    <div class="trainer-info">
+                        <h3>CrossFit</h3>
+                        <p>Kekuatan fungsional dan ketahanan.</p>
+                        <button class="btn-outline">Lihat Jadwal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="loginModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><div class="auth-form"><h2>Login</h2><form id="loginForm"><label>Email</label><input type="email"><label>Password</label><input type="password"><button class="btn-primary" style="width:100%">Masuk</button></form></div></div></div>
+    <div id="paymentModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><div class="auth-form"><h2>Pembayaran</h2><h3 id="paymentTotal" style="text-align:center;color:white">Total: --</h3><form id="paymentForm"><div class="payment-options"><div class="payment-option"><i class="fas fa-wallet"></i>E-Wallet</div><div class="payment-option"><i class="fas fa-university"></i>Bank</div></div><input type="text" placeholder="No. HP" required><button class="btn-primary" style="width:100%">Bayar</button></form></div></div></div>
+    <div id="scheduleModal" class="modal"><div class="modal-content large"><span class="close-modal">&times;</span><h2 style="color:var(--primary);text-align:center">Jadwal Kelas</h2><div class="schedule-wrapper"><table class="schedule-table"><thead><tr><th>Jam</th><th>Senin</th><th>Jumat</th></tr></thead><tbody><tr><td>08:00</td><td>Yoga</td><td>Pilates</td></tr><tr><td>17:00</td><td>Boxing</td><td>Zumba</td></tr></tbody></table></div></div></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
